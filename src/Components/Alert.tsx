@@ -4,7 +4,7 @@ interface Props {
   onClose: () => void;
 }
 
-const Alert = ({ children ,onClose}: Props) => {
+const Alert = ({ children, onClose }: Props) => {
   return (
     <div className="alert alert-success alert-dismissible fade show">
       {children}
@@ -14,6 +14,3 @@ const Alert = ({ children ,onClose}: Props) => {
 };
 
 export default Alert;
-
-
-
