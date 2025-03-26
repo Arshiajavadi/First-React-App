@@ -16,7 +16,7 @@ interface Props {
 const ExpenseList = ({ expenses , onDelete}: Props) => {
   return (
     <div className="table-container ">
-      <table className="custom-table  ">
+      <table className="custom-table">
         <thead className="bg-primary text-white custom-table">
           <tr>
             <th>Description</th>
