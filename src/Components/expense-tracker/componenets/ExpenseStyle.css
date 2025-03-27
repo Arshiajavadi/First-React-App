@@ -1,7 +1,6 @@
-
 .heading {
   text-align: center;
-  width: 20rem;
+  width: 16rem;
   margin: auto;
   padding: 5px;
   border-radius: 10px;
@@ -61,6 +60,9 @@
 }
 
 @media screen and (min-width: 670px) {
+  .heading {
+    width: 20rem;
+  }
   .table-container {
     width: 40rem;
     margin: auto;

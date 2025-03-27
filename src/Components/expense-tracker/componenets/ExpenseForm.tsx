@@ -5,7 +5,6 @@ import categories from "./Categories";
 import { useForm } from "react-hook-form";
 import "./ExpenseStyle.css";
 
-
 const schema = z.object({
   description: z
     .string()
@@ -36,7 +35,7 @@ const ExpenseForm = ({ onSubmit }: Props) => {
 
   return (
     <>
-      <div className="justify-content-center mt-5 mb-5 form-container">
+      <div className="justify-content-center mt-5 mb-5 form-container ">
         <form
           onSubmit={handleSubmit((e) => {
             onSubmit(e), reset();
@@ -58,7 +57,7 @@ const ExpenseForm = ({ onSubmit }: Props) => {
             )}
           </div>
           <div className="mb-3">
-            <label htmlFor="amount" className="form-label">
+            <label htmlFor="amount" className="form-label fw-bold">
               Amount
             </label>
             <input
@@ -72,7 +71,7 @@ const ExpenseForm = ({ onSubmit }: Props) => {
             )}
           </div>
           <div className="mb-3">
-            <label htmlFor="category" className="form-label">
+            <label htmlFor="category" className="form-label fw-bold">
               Category
             </label>
             <select

@@ -1,5 +1,5 @@
 import React from "react";
-import './ExpenseStyle.css'
+import "./ExpenseStyle.css";
 
 interface Expense {
   id: number;
@@ -9,13 +9,13 @@ interface Expense {
 }
 
 interface Props {
-    expenses: Expense[];
-    onDelete: (id: number) => void;
+  expenses: Expense[];
+  onDelete: (id: number) => void;
 }
 
-const ExpenseList = ({ expenses , onDelete}: Props) => {
+const ExpenseList = ({ expenses, onDelete }: Props) => {
   return (
-    <div className="table-container ">
+    <div className="table-container">
       <table className="custom-table">
         <thead className="bg-primary text-white custom-table">
           <tr>
